@@ -22,3 +22,6 @@ nav:
   - Home: index.md
   - Projects:
       - Adjustable Buck Converter: buck-converter.md
+
+extra_css:
+  - stylesheets/extra.css
