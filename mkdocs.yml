@@ -5,8 +5,8 @@ theme:
   name: material
   palette:
     - scheme: slate
-      primary: blue
-      accent: cyan
+      primary: black
+      accent: amber
 
 markdown_extensions:
   - admonition
