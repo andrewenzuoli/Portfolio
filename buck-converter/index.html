@@ -796,21 +796,21 @@
 <details class="note">
 <summary>Click to expand Inductor &amp; Capacitor Calculations</summary>
 <h3 id="a-duty-cycle-timing">A. Duty Cycle &amp; Timing</h3>
-<div class="arithmatex">\[D_{max} = \frac{V_{out}}{V_{in}} = \frac{18\text{V}}{19.5\text{V}} = 0.9231 \quad (92.3\%)$$
-$$T_{on} = D_{max} \cdot T = 0.9231 \cdot \frac{1}{500 \times 10^3} = 1.846\,\mu\text{s}\]</div>
+<div class="arithmatex">\[D_{max} = \frac{V_{out}}{V_{in}} = \frac{18\text{V}}{19.5\text{V}} = 0.9231 \quad (92.3\%)\]</div>
+<div class="arithmatex">\[T_{on} = D_{max} \cdot T = 0.9231 \cdot \frac{1}{500 \times 10^3} = 1.846\,\mu\text{s}\]</div>
 <h3 id="b-inductor-sizing-l">B. Inductor Sizing (<span class="arithmatex">\(L\)</span>)</h3>
-<p>Targeting a ripple current (<span class="arithmatex">\(\Delta I_L\)</span>) of 30% at max current (3.0A):
-$<span class="arithmatex">\(\Delta I_L = 0.30 \times 3.0\text{A} = 0.9\text{A}\)</span>$</p>
-<p>Worst-case ripple occurs at <span class="arithmatex">\(D = 0.5\)</span> (<span class="arithmatex">\(V_{out} = 9.75\text{V}\)</span>):
-$<span class="arithmatex">\(L_{worst\ case} = \frac{(19.5 - 9.75) \cdot 9.75}{19.5 \cdot 500{,}000 \cdot 0.9} = 10.83\,\mu\text{H} \approx \mathbf{10\,\mu\text{H}}\)</span>$</p>
-<p><strong>Inductor Peak / Saturation Margin:</strong>
-$<span class="arithmatex">\(I_{peak} = I_{out} + \frac{\Delta I_L}{2} = 3.0\text{A} + 0.45\text{A} = \mathbf{3.45\text{A}}\)</span>$
-<em>Selected: Bourns SRP7028A-100M (<span class="arithmatex">\(10\mu\text{H}\)</span>, <span class="arithmatex">\(I_{sat} \ge 4.0\text{A}\)</span>).</em></p>
+<p>Targeting a ripple current (<span class="arithmatex">\(\Delta I_L\)</span>) of 30% at max current (3.0A):</p>
+<div class="arithmatex">\[\Delta I_L = 0.30 \times 3.0\text{A} = 0.9\text{A}\]</div>
+<p>Worst-case ripple occurs at <span class="arithmatex">\(D = 0.5\)</span> (<span class="arithmatex">\(V_{out} = 9.75\text{V}\)</span>):</p>
+<div class="arithmatex">\[L_{worst\ case} = \frac{(19.5 - 9.75) \cdot 9.75}{19.5 \cdot 500{,}000 \cdot 0.9} = 10.83\,\mu\text{H} \approx \mathbf{10\,\mu\text{H}}\]</div>
+<p><strong>Inductor Peak / Saturation Margin:</strong></p>
+<div class="arithmatex">\[I_{peak} = I_{out} + \frac{\Delta I_L}{2} = 3.0\text{A} + 0.45\text{A} = \mathbf{3.45\text{A}}\]</div>
+<p><em>Selected: Bourns SRP7028A-100M (<span class="arithmatex">\(10\mu\text{H}\)</span>, <span class="arithmatex">\(I_{sat} \ge 4.0\text{A}\)</span>).</em></p>
 <hr />
 <h3 id="c-output-capacitor-sizing-c_out">C. Output Capacitor Sizing (<span class="arithmatex">\(C_{out}\)</span>)</h3>
-<p>$<span class="arithmatex">\(\Delta V_{out} = \frac{\Delta I_L}{8 \cdot f_{sw} \cdot C_{out}}\)</span>$
-$<span class="arithmatex">\(C_{out} \ge \frac{0.9\text{A}}{8 \cdot 500{,}000 \cdot 0.010\text{V}} = \mathbf{22.5\,\mu\text{F}}\)</span>$
-<em>Selected: Two <span class="arithmatex">\(22\,\mu\text{F}\)</span> 1210 X7R ceramic capacitors in parallel (<span class="arithmatex">\(44\,\mu\text{F}\)</span> total).</em></p>
+<div class="arithmatex">\[\Delta V_{out} = \frac{\Delta I_L}{8 \cdot f_{sw} \cdot C_{out}}\]</div>
+<div class="arithmatex">\[C_{out} \ge \frac{0.9\text{A}}{8 \cdot 500{,}000 \cdot 0.010\text{V}} = \mathbf{22.5\,\mu\text{F}}\]</div>
+<p><em>Selected: Two <span class="arithmatex">\(22\,\mu\text{F}\)</span> 1210 X7R ceramic capacitors in parallel (<span class="arithmatex">\(44\,\mu\text{F}\)</span> total).</em></p>
 </details>
 <hr />
 <h2 id="3-simulation-circuit-progression">3. Simulation &amp; Circuit Progression</h2>
@@ -1071,6 +1071,10 @@ $<span class="arithmatex">\(C_{out} \ge \frac{0.9\text{A}}{8 \cdot 500{,}000 \cd
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.j"></script>
       
     
   </body>
