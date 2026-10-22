@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#adjustable-synchronous-buck-converter-12v-180v-3a" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -297,6 +302,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adjustable Buck Converter
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -314,6 +339,191 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-specifications-design-envelope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Specifications &amp; Design Envelope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mathematical-sizing-derivations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Mathematical Sizing &amp; Derivations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Mathematical Sizing &amp; Derivations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-duty-cycle-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Duty Cycle &amp; Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-inductor-sizing-l" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Inductor Sizing (\(L\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-output-capacitor-sizing-c_out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Output Capacitor Sizing (\(C_{out}\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-simulation-circuit-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Simulation &amp; Circuit Progression
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Simulation &amp; Circuit Progression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-ideal-switching-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1: Ideal Switching Baseline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-realistic-mosfet-power-stage-waveform-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2: Realistic MOSFET Power Stage &amp; Waveform Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-the-parasitic-inductance-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3: The Parasitic Inductance Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-input-damping-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4: Input Damping Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hardware-implementation-kicad-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hardware Implementation &amp; KiCad Schematic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-bill-of-materials-bom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Bill of Materials (BOM)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pcb-layout-physical-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. PCB Layout &amp; Physical Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-status-bench-testing-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Status &amp; Bench Testing Roadmap
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -344,6 +554,182 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-specifications-design-envelope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Specifications &amp; Design Envelope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-mathematical-sizing-derivations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Mathematical Sizing &amp; Derivations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Mathematical Sizing &amp; Derivations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-duty-cycle-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. Duty Cycle &amp; Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-inductor-sizing-l" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. Inductor Sizing (\(L\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-output-capacitor-sizing-c_out" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. Output Capacitor Sizing (\(C_{out}\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-simulation-circuit-progression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Simulation &amp; Circuit Progression
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Simulation &amp; Circuit Progression">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-ideal-switching-baseline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1: Ideal Switching Baseline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-realistic-mosfet-power-stage-waveform-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2: Realistic MOSFET Power Stage &amp; Waveform Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-the-parasitic-inductance-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3: The Parasitic Inductance Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-4-input-damping-solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 4: Input Damping Solution
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hardware-implementation-kicad-schematic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hardware Implementation &amp; KiCad Schematic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-bill-of-materials-bom" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Bill of Materials (BOM)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-pcb-layout-physical-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. PCB Layout &amp; Physical Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-status-bench-testing-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Status &amp; Bench Testing Roadmap
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -360,9 +746,276 @@
 
 
 
-  <h1>Adjustable Buck Converter</h1>
-
-
+<h1 id="adjustable-synchronous-buck-converter-12v-180v-3a">Adjustable Synchronous Buck Converter (1.2V – 18.0V @ 3A)</h1>
+<p>A variable bench power supply designed to step down a standard 19.5V laptop charger (HP Omen 16) into an adjustable, low-noise DC output.</p>
+<hr />
+<h2 id="1-specifications-design-envelope">1. Specifications &amp; Design Envelope</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Specification</th>
+<th style="text-align: left;">Implementation Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Input Voltage (<span class="arithmatex">\(V_{in}\)</span>)</strong></td>
+<td style="text-align: left;">19.5V DC</td>
+<td style="text-align: left;">HP Omen 16 power brick via screw-terminal pigtail</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Output Voltage Range (<span class="arithmatex">\(V_{out}\)</span>)</strong></td>
+<td style="text-align: left;">1.2V – 18.0V</td>
+<td style="text-align: left;">Closed-loop potentiometer feedback network</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Maximum Output Current (<span class="arithmatex">\(I_{out}\)</span>)</strong></td>
+<td style="text-align: left;">3.0A</td>
+<td style="text-align: left;">Saturation-rated power inductor (<span class="arithmatex">\(I_{sat} \ge 4\text{A}\)</span>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Switching Frequency (<span class="arithmatex">\(f_{sw}\)</span>)</strong></td>
+<td style="text-align: left;">500 kHz</td>
+<td style="text-align: left;">Programmed via 100kΩ timing resistor on RT pin</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Output Voltage Ripple</strong></td>
+<td style="text-align: left;">&lt; 30 mV pk-pk</td>
+<td style="text-align: left;">Dual 22µF parallel low-ESR ceramic caps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Target Efficiency</strong></td>
+<td style="text-align: left;">&gt; 90%</td>
+<td style="text-align: left;">Synchronous rectification using dual NMOS FETs</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-mathematical-sizing-derivations">2. Mathematical Sizing &amp; Derivations</h2>
+<details class="note">
+<summary>Click to expand Inductor &amp; Capacitor Calculations</summary>
+<h3 id="a-duty-cycle-timing">A. Duty Cycle &amp; Timing</h3>
+<div class="arithmatex">\[D_{max} = \frac{V_{out}}{V_{in}} = \frac{18\text{V}}{19.5\text{V}} = 0.9231 \quad (92.3\%)$$
+$$T_{on} = D_{max} \cdot T = 0.9231 \cdot \frac{1}{500 \times 10^3} = 1.846\,\mu\text{s}\]</div>
+<h3 id="b-inductor-sizing-l">B. Inductor Sizing (<span class="arithmatex">\(L\)</span>)</h3>
+<p>Targeting a ripple current (<span class="arithmatex">\(\Delta I_L\)</span>) of 30% at max current (3.0A):
+$<span class="arithmatex">\(\Delta I_L = 0.30 \times 3.0\text{A} = 0.9\text{A}\)</span>$</p>
+<p>Worst-case ripple occurs at <span class="arithmatex">\(D = 0.5\)</span> (<span class="arithmatex">\(V_{out} = 9.75\text{V}\)</span>):
+$<span class="arithmatex">\(L_{worst\ case} = \frac{(19.5 - 9.75) \cdot 9.75}{19.5 \cdot 500{,}000 \cdot 0.9} = 10.83\,\mu\text{H} \approx \mathbf{10\,\mu\text{H}}\)</span>$</p>
+<p><strong>Inductor Peak / Saturation Margin:</strong>
+$<span class="arithmatex">\(I_{peak} = I_{out} + \frac{\Delta I_L}{2} = 3.0\text{A} + 0.45\text{A} = \mathbf{3.45\text{A}}\)</span>$
+<em>Selected: Bourns SRP7028A-100M (<span class="arithmatex">\(10\mu\text{H}\)</span>, <span class="arithmatex">\(I_{sat} \ge 4.0\text{A}\)</span>).</em></p>
+<hr />
+<h3 id="c-output-capacitor-sizing-c_out">C. Output Capacitor Sizing (<span class="arithmatex">\(C_{out}\)</span>)</h3>
+<p>$<span class="arithmatex">\(\Delta V_{out} = \frac{\Delta I_L}{8 \cdot f_{sw} \cdot C_{out}}\)</span>$
+$<span class="arithmatex">\(C_{out} \ge \frac{0.9\text{A}}{8 \cdot 500{,}000 \cdot 0.010\text{V}} = \mathbf{22.5\,\mu\text{F}}\)</span>$
+<em>Selected: Two <span class="arithmatex">\(22\,\mu\text{F}\)</span> 1210 X7R ceramic capacitors in parallel (<span class="arithmatex">\(44\,\mu\text{F}\)</span> total).</em></p>
+</details>
+<hr />
+<h2 id="3-simulation-circuit-progression">3. Simulation &amp; Circuit Progression</h2>
+<h3 id="stage-1-ideal-switching-baseline">Stage 1: Ideal Switching Baseline</h3>
+<p>To validate the duty cycle math and filter sizing, the circuit was first modeled using ideal voltage-controlled switches and an ideal DC source.</p>
+<p><img alt="Ideal Buck Converter Simulation" src="../images/1-ideal-simulation.png" />
+<em>Figure 1: Ideal LTspice model confirming target 18V output delivering 2A through a 9Ω load.</em></p>
+<hr />
+<h3 id="stage-2-realistic-mosfet-power-stage-waveform-verification">Stage 2: Realistic MOSFET Power Stage &amp; Waveform Verification</h3>
+<p>The ideal switches were replaced with real Siliconix/Vishay <strong>Si7336ADP</strong> N-channel MOSFETs, incorporating real <span class="arithmatex">\(R_{DS(on)}\)</span> and parasitic capacitances.</p>
+<p><img alt="Real MOSFET Circuit" src="../images/2-mosfet-circuit.png" />
+<em>Figure 2: Power stage schematic utilizing dual Si7336ADP PowerPAK SO-8 MOSFETs.</em></p>
+<p><img alt="Switching Waveforms" src="../images/3-switching-waveforms.png" />
+<em>Figure 3: Top to bottom: Inductor ripple current (<span class="arithmatex">\(I_L\)</span>), switch node square wave (<span class="arithmatex">\(V_{SW}\)</span>), and output voltage/current stability.</em></p>
+<p><strong>Waveform Analysis:</strong>
+* <strong>Inductor Current (<span class="arithmatex">\(I_L\)</span>):</strong> Verified triangular ripple behavior in continuous conduction mode (CCM). Peak current confirmed within the safe saturation margin of the selected inductor core.
+* <strong>Switch Node (<span class="arithmatex">\(V_{SW}\)</span>):</strong> Monitored sharp transitions and confirmed gate timing prevented dead-time shoot-through.</p>
+<hr />
+<h3 id="stage-3-the-parasitic-inductance-problem">Stage 3: The Parasitic Inductance Problem</h3>
+<p>In practical applications, power is delivered through a ~1.5m laptop cable. Modeling this wire parasitic inductance (~<span class="arithmatex">\(1.5\mu\text{H}\)</span>) combined with 10ns switching edges revealed a severe issue:</p>
+<p><img alt="Input Voltage Spike" src="../images/4-parasitic-spike.png" />
+<em>Figure 4: Unfiltered input voltage (<span class="arithmatex">\(V_{in}\)</span>) exhibiting severe <span class="arithmatex">\(LC\)</span> ringing with inductive spikes exceeding <strong>140V</strong>.</em></p>
+<p>Because the MOSFETs are rated for <span class="arithmatex">\(30\text{V}\)</span>, these undamped voltage spikes would cause immediate catastrophic breakdown on first power-up.</p>
+<hr />
+<h3 id="stage-4-input-damping-solution">Stage 4: Input Damping Solution</h3>
+<p>To clamp input inductive kickback while filtering high-frequency switching currents, a hybrid 3-capacitor network was implemented:
+* <strong>High-Frequency Ceramic Decoupling (<span class="arithmatex">\(2\times 10\mu\text{F}\)</span> 1210):</strong> Positioned immediately at the high-side FET drain to provide transient current and minimize local loop area.
+* <strong>Electrolytic Damping (<span class="arithmatex">\(1\times 100\mu\text{F}\)</span>):</strong> Selected for its higher internal ESR to act as an <span class="arithmatex">\(RC\)</span> snubber, absorbing input energy surges and damping cable resonance.</p>
+<p><img alt="Damped Circuit Schematic" src="../images/5-damped-circuit.png" />
+<em>Figure 5: Input network incorporating <span class="arithmatex">\(1.5\mu\text{H}\)</span> cable inductance model and hybrid ceramic/electrolytic decoupling.</em></p>
+<p><img alt="Damped Waveforms" src="../images/6-damped-waveforms.png" />
+<em>Figure 6: Regulated input voltage (<span class="arithmatex">\(V_{in}\)</span>) successfully clamped to a stable 19.4V DC rail alongside clean output voltage and current.</em></p>
+<hr />
+<h2 id="4-hardware-implementation-kicad-schematic">4. Hardware Implementation &amp; KiCad Schematic</h2>
+<p>To translate the simulated power stage into physical hardware, the design incorporates a dedicated <strong>Renesas ISL8117FRZ</strong> synchronous PWM controller IC.</p>
+<p><img alt="KiCad Schematic" src="../images/7-kicad-schematic.png" />
+<em>Figure 7: Complete KiCad schematic including controller IC, bootstrap circuitry, feedback divider, and external display headers.</em></p>
+<ul>
+<li><strong>Power Interfacing:</strong> Due to the lack of PCB-mount 4.5mm × 3.0mm barrel jack connectors, heavy-duty 5.00mm Phoenix screw terminals were utilized with a stripped pigtail cable.</li>
+<li><strong>Closed-Loop Regulation:</strong> JST-XH 3-pin headers route the feedback node to an external panel-mount potentiometer for variable output adjustment.</li>
+<li><strong>Instrumentation:</strong> 5-pin JST-XH header integrated for an external digital voltage/current panel display.</li>
+</ul>
+<hr />
+<h2 id="5-bill-of-materials-bom">5. Bill of Materials (BOM)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Item</th>
+<th style="text-align: left;">Designator</th>
+<th style="text-align: center;">Qty</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Package</th>
+<th style="text-align: left;">Part Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><strong>U1</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">ISL8117FRZ</td>
+<td style="text-align: left;">Synchronous Buck Controller</td>
+<td style="text-align: left;">QFN-16 (4×4mm)</td>
+<td style="text-align: left;">ISL8117FRZ-T</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><strong>Q1, Q2</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Si7336ADP</td>
+<td style="text-align: left;">30V 30A N-Channel MOSFET</td>
+<td style="text-align: left;">PowerPAK SO-8</td>
+<td style="text-align: left;">Si7336ADP-T1-GE3</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><strong>L1</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">10µH</td>
+<td style="text-align: left;">Shielded Power Inductor (<span class="arithmatex">\(I_{sat} \ge 4.0\text{A}\)</span>)</td>
+<td style="text-align: left;">SMD 7.3×6.6mm</td>
+<td style="text-align: left;">Bourns SRP7028A-100M</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"><strong>C1, C2</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">22µF</td>
+<td style="text-align: left;">Output Filter Ceramic, X7R 25V</td>
+<td style="text-align: left;">SMD 1210</td>
+<td style="text-align: left;">Murata / TDK</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><strong>C3, C4</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">10µF</td>
+<td style="text-align: left;">Input High-Freq Ceramic, X7R 50V</td>
+<td style="text-align: left;">SMD 1210</td>
+<td style="text-align: left;">Murata / TDK</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"><strong>C5</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">100µF</td>
+<td style="text-align: left;">Input Bulk Electrolytic, 50V Low-ESR</td>
+<td style="text-align: left;">Radial THT D6.3mm</td>
+<td style="text-align: left;">Nichicon / Panasonic</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;"><strong>C6, C8</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">0.1µF</td>
+<td style="text-align: left;">Bootstrap (C6) &amp; Bypass (C8) Caps</td>
+<td style="text-align: left;">SMD 0603</td>
+<td style="text-align: left;">Standard 0603</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;"><strong>C7</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">2.2µF</td>
+<td style="text-align: left;">VCC LDO Decoupling Capacitor</td>
+<td style="text-align: left;">SMD 0603</td>
+<td style="text-align: left;">Standard 0603</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;"><strong>R1</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">100kΩ</td>
+<td style="text-align: left;">Frequency Setting Resistor, 1%</td>
+<td style="text-align: left;">SMD 0603</td>
+<td style="text-align: left;">Standard 0603</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;"><strong>R2</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">20kΩ</td>
+<td style="text-align: left;">Upper Feedback Resistor, 1%</td>
+<td style="text-align: left;">SMD 0603</td>
+<td style="text-align: left;">Standard 0603</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;"><strong>R3</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">1kΩ</td>
+<td style="text-align: left;">Lower Feedback Limit Resistor, 1%</td>
+<td style="text-align: left;">SMD 0603</td>
+<td style="text-align: left;">Standard 0603</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;"><strong>J1, J2</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">2-Pin</td>
+<td style="text-align: left;">Screw Terminal Blocks (5.00mm)</td>
+<td style="text-align: left;">THT Horizontal</td>
+<td style="text-align: left;">Phoenix PT 1,5/2-5,0-H</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;"><strong>J3</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">3-Pin</td>
+<td style="text-align: left;">Potentiometer Harness Header</td>
+<td style="text-align: left;">JST-XH 2.50mm</td>
+<td style="text-align: left;">JST B3B-XH-A</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;"><strong>J4</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">5-Pin</td>
+<td style="text-align: left;">LED Panel Meter Connector</td>
+<td style="text-align: left;">JST-XH 2.50mm</td>
+<td style="text-align: left;">JST B5B-XH-A</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-pcb-layout-physical-design">6. PCB Layout &amp; Physical Design</h2>
+<p><img alt="PCB Layout" src="../images/8-pcb-layout.png" />
+<em>Figure 8: 2-layer routing with solid ground plane stitching, wide high-current power polygons, and short gate-drive loops.</em></p>
+<p><img alt="KiCad 3D Board Render" src="../images/9-pcb-3d.png" />
+<em>Figure 9: Populated 3D board view showing connector clearance, power stage density, and M3 mounting points.</em></p>
+<ul>
+<li><strong>Continuous Layer 2 Ground Plane:</strong> Uninterrupted bottom copper return under critical high-<span class="arithmatex">\(di/dt\)</span> switching nodes minimizes radiated EMI and suppresses ground bounce.</li>
+<li><strong>Thermal Management:</strong> Via stitching arrays adjacent to MOSFET thermal pads and the power inductor transfer heat into internal copper planes.</li>
+<li><strong>Critical Loop Routing:</strong> Shortened the distance between input ceramic capacitors, high-side drain, low-side source, and ground to minimize high-frequency loop inductance.</li>
+</ul>
+<hr />
+<h2 id="7-status-bench-testing-roadmap">7. Status &amp; Bench Testing Roadmap</h2>
+<ul>
+<li>[x] Mathematical calculations and worst-case component sizing[cite: 18, 19].</li>
+<li>[x] LTspice transient modeling and parasitic spike mitigation[cite: 20, 21].</li>
+<li>[x] KiCad schematic capture and 2-layer layout optimization[cite: 22, 23, 24].</li>
+<li>[ ] PCB fabrication and SMD reflow soldering.</li>
+<li>[ ] Oscilloscope verification: switch-node ringing and load step transient response across 1.2V–18V sweep.</li>
+</ul>
 
 
 

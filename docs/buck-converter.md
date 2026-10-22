@@ -21,25 +21,35 @@ A variable bench power supply designed to step down a standard 19.5V laptop char
 
 ??? note "Click to expand Inductor & Capacitor Calculations"
     ### A. Duty Cycle & Timing
+    
     $$D_{max} = \frac{V_{out}}{V_{in}} = \frac{18\text{V}}{19.5\text{V}} = 0.9231 \quad (92.3\%)$$
+    
     $$T_{on} = D_{max} \cdot T = 0.9231 \cdot \frac{1}{500 \times 10^3} = 1.846\,\mu\text{s}$$
 
     ### B. Inductor Sizing ($L$)
+    
     Targeting a ripple current ($\Delta I_L$) of 30% at max current (3.0A):
+    
     $$\Delta I_L = 0.30 \times 3.0\text{A} = 0.9\text{A}$$
 
     Worst-case ripple occurs at $D = 0.5$ ($V_{out} = 9.75\text{V}$):
+    
     $$L_{worst\ case} = \frac{(19.5 - 9.75) \cdot 9.75}{19.5 \cdot 500{,}000 \cdot 0.9} = 10.83\,\mu\text{H} \approx \mathbf{10\,\mu\text{H}}$$
 
     **Inductor Peak / Saturation Margin:**
+    
     $$I_{peak} = I_{out} + \frac{\Delta I_L}{2} = 3.0\text{A} + 0.45\text{A} = \mathbf{3.45\text{A}}$$
+    
     *Selected: Bourns SRP7028A-100M ($10\mu\text{H}$, $I_{sat} \ge 4.0\text{A}$).*
 
     ---
 
     ### C. Output Capacitor Sizing ($C_{out}$)
+    
     $$\Delta V_{out} = \frac{\Delta I_L}{8 \cdot f_{sw} \cdot C_{out}}$$
+
     $$C_{out} \ge \frac{0.9\text{A}}{8 \cdot 500{,}000 \cdot 0.010\text{V}} = \mathbf{22.5\,\mu\text{F}}$$
+    
     *Selected: Two $22\,\mu\text{F}$ 1210 X7R ceramic capacitors in parallel ($44\,\mu\text{F}$ total).*
 
 ---
